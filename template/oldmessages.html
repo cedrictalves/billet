@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Admin - Billet simple pour l'Alaska</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/assets/adminstyle/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   <link href="/assets/adminstyle/css/stylecommentmessage.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/assets/adminstyle/css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Messages archivés </div>
+      <div class="list-group list-group-flush">
+        <a href="/admin/" class="list-group-item list-group-item-action bg-light">Précedent</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="newChapter">Nouveau chapitre<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="/admin/messages">Messages Reçus <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="/admin/">Mes chapitres <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="/logout">Déconnexion <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <p>{{ messages }}</p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/assets/adminstyle/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/adminstyle/endor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.adminComment {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.adminComment b, p, form{
+  margin-right: 1rem;
+
+
+}
+
+.adminCom {
+  border: 1px solid silver;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.listChapter {
+	display: flex;
+}
+
+.listChapter a {
+	margin-right: 1rem;
+}
+
+.listChapter input {
+	background-color: white;
+	border: none;
+	color: red;
+}
+
+.listChapter input:hover {
+	background-color: white;
+	border: none;
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#new {
+	color: green;
+	font-weight: bold;
+	padding-left: 1rem;
+}
+
+#report {
+	color: red;
+	font-weight: bold;
+	padding-left: 1rem;
+}
+

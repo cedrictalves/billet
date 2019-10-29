@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>{{ title }} - Billet simple pour l'Alaska</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+<section id="header">
+	<header class="major">
+		<h1>BILLET SIMPLE POUR L'ALASKA</h1>
+		<p>Jean Forteroche</p>
+	</header>
+</section>
+		
+		<section id="one" class="main special">
+			<div class="container">
+
+					<div class="content" id="introduction">
+						<header class="major">
+
+<!-- CHAPTER -->			{{ chapter }}
+
+						</header>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+			</div>
+		</section>
+
+			<!-- Commentaires -->
+		<section id="footer">
+			<div class="container">
+				<header class="major">
+					<h2 id="contact">Commentaires</h2>
+				</header>
+
+<!-- COMMENT -->			{{ comment }}
+
+				<header class="major">
+					<h2 id="contact">Réagissez!</h2>
+				</header>
+
+				<form method="POST" action="">
+						<div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="user_name" id="user_name" placeholder="Pseudo" />
+							</div>
+
+							<div class="col-6 col-12-xsmall">
+								<textarea id="content" name="content" placeholder="Votre commentaire"rows="5" cols="33"></textarea>
+      						</div>
+
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Publier" class="primary" /></li>
+								</ul>
+							</div>
+
+							<input type="hidden"  name="post_id" id="post_id" value="{{ post_id }}">
+							<input type="hidden"  name="date_creation" id="date_creation" value="{{ date_creation }}">
+							<input type="hidden"  name="state" id="state" value="0">
+						</div>
+				</form>
+								<a href="/home">Accueil</a>
+			</div>
+
+
+			<footer>
+				<ul class="icons">
+					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+
+				<ul class="copyright">
+					<li><a href="#header">&copy; JEAN FORTEROCHE</a></li>
+					<li><a href="/admin/">CONNEXION</a></li>
+				</ul>
+			</footer>
+		</section>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
